@@ -1,0 +1,351 @@
+*
+  padding: 0
+  margin: 0
+  font-family: 'Roboto', sans-serif
+
+.container
+  @media screen and (max-width: 576px)
+    width: calc( 100% - 30px ) !important
+
+.navbar
+  position: relative
+  top: 0
+  left: 0
+  width: 100%
+  background-color: #FFD634
+  user-select: none
+  .nav
+    padding: 10px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid #fff
+    @media screen and (max-width: 576px)
+      flex-direction: column
+    @media screen and (max-width: 340px)
+      img
+        width: 100%
+  .number
+    display: flex
+    align-items: center
+  a
+    margin: 4px
+    color: #000000
+    text-decoration: none
+    font-size: 18px
+
+header
+  padding-top: 120px
+  background-color: #FFD634
+  user-select: none
+  .container
+    position: relative
+  .title
+    position: relative
+    display: inline-block
+    font-size: 48px
+    font-weight: 800
+    @media screen and (max-width: 576px)
+      font-size: 36px
+  .subtitle
+    margin: 30px 0 60px 0
+    font-size: 20px
+    letter-spacing: 0.05em
+  .price
+    display: inline-block
+    width: 160px
+    padding: 12px
+    font-size: 18px
+    background-color: #ffdc17
+    border-radius: 8px
+    border: 2px solid #000
+    transform: rotate(-8deg)
+    @media screen and (max-width: 576px)
+      transform: scale(.6) rotate(-8deg)
+    span
+      margin: 0 4px
+      font-size: 28px
+      font-weight: 600
+      line-height: 25px
+  .benefit
+    display: grid
+    margin: 30px 0
+    grid-template-columns: 250px 1fr
+    @media screen and (max-width: 576px)
+      padding: 15px
+      grid-gap: 15px
+      grid-template-columns: 1fr
+    .img-block
+      width: 250px
+      text-align: center
+      @media screen and (max-width: 576px)
+        width: 100%
+    img
+      height: 120px
+  .item
+    .title
+      font-size: 24px
+      margin-bottom: 5px
+    .text
+      font-size: 16px
+  .bg-img
+    position: absolute
+    right: 0px
+    bottom: 0px
+    img
+      height: 450px
+      @media screen and (max-width: 576px)
+        width: 100%
+        height: 100%
+    @media screen and (max-width: 992px)
+      position: relative
+      text-align: center
+  .img-boxes
+    position: relative
+    margin: 0 100px
+    height: 400px
+    background-color: #48e0b6
+    border: 3px solid #000
+    opacity: .7
+    &::after
+      content: ""
+      position: absolute
+      height: 100%
+      width: 100%
+      top: 10px
+      left: 10px
+      background-color: #bf1b27
+      z-index: -1
+
+#services
+  padding: 60px 0
+  background-color: #FFD634
+  user-select: none
+  .container
+    padding: 60px
+    width: calc( 100% - 240px)
+    background-color: #fff
+    overflow: hidden
+    @media screen and (max-width: 576px)
+      padding: 15px
+      margin: 30px
+      width: calc( 100% - 90px ) !important
+  .title
+    margin-bottom: 20px
+    font-size: 56px
+    font-weight: 700
+    @media screen and (max-width: 576px)
+      font-size: 36px
+  .col
+    position: relative
+  .type
+    margin-left: 8px
+    color: #FFD634
+    font-size: 36px
+    font-weight: 800
+    text-transform: uppercase
+    @media screen and (max-width: 576px)
+      font-size: 24px
+  ul
+    li
+      margin: 8px
+      list-style: none
+      font-size: 26px
+      @media screen and (max-width: 576px)
+        font-size: 20px
+
+#whywe
+  position: relative
+  padding: 60px 0
+  background-position: center center
+  background-attachment: scroll
+  background-image: url(https://static.tildacdn.com/tild3432-3361-4663-b030-323935316530/Grid2.svg)
+  background-color: #201e1e
+  color: #fff
+  user-select: none
+  .title
+    position: relative
+    display: inline-block
+    margin-bottom: 40px
+    font-size: 56px
+    font-weight: 700
+    z-index: 0
+    @media screen and (max-width: 576px)
+      font-size: 36px
+    &::after
+      content: ""
+      position: absolute
+      height: 20px
+      width: 100%
+      bottom: 3px
+      left: 10px
+      background-color: #48e0b6
+      z-index: -1
+      opacity: .7
+      @media screen and (max-width: 576px)
+        display: none
+  ul
+    padding: 0 120px
+    @media screen and (max-width: 768px)
+      padding: 0
+    li
+      display: flex
+      margin: 30px 0
+      align-items: center
+      list-style: none
+      &:nth-child(even)
+        flex-direction: row-reverse
+        .number
+          margin-left: 60px
+      @media screen and (max-width: 576px)
+        flex-direction: column
+        &:nth-child(even)
+          flex-direction: column
+  .number
+    margin-right: 60px
+    font-size: 180px
+    font-weight: 600
+    @media screen and (max-width: 576px)
+      font-size: 120px
+  .item
+    &-title
+      margin-bottom: 10px
+      font-size: 32px
+      font-weight: 600
+    &-text
+      max-width: 400px
+
+#counter
+  padding-top: 60px
+  user-select: none
+  .container
+    width: calc( 100% - 120px )
+  .boxes
+    margin: 0 120px
+    padding: 60px 0
+    background-color: #00000014
+    @media screen and (max-width: 1600px)
+      margin: 60px 30px 0 30px
+
+  .title
+    margin-bottom: 40px
+    font-size: 56px
+    font-weight: 700
+    @media screen and (max-width: 576px)
+      font-size: 36px
+  ul
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 40px
+    @media screen and (max-width: 992px)
+      margin: 0 15px
+      grid-template-columns: 1fr 1fr
+    @media screen and (max-width: 576px)
+      grid-template-columns: 1fr
+    li
+      margin: 10px
+      padding: 15px
+      display: flex
+      position: relative
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      list-style: none
+      text-align: center
+      background-color: #fff
+      border-radius: 15px
+      border: 3px solid #000000
+      &::after
+        content: ''
+        position: absolute
+        height: 100%
+        width: 100%
+        top: 10px
+        left: 10px
+        border-radius: 15px
+        background-color: #FFD634
+        z-index: -1
+
+  .count
+    color: #bf1b27
+    font-size: 48px
+    line-height: 1
+    font-weight: 700
+  .type
+    padding: 10px
+    font-size: 18px
+    line-height: 1
+    font-weight: 500
+    transform: scale(.8)
+  span
+    font-size: 14px
+
+#partners
+  padding: 60px 0
+  user-select: none
+
+  .title
+    margin-bottom: 40px
+    font-size: 56px
+    font-weight: 700
+    @media screen and (max-width: 576px)
+      font-size: 36px
+  .slick-slide
+    padding: 10px
+    display: flex
+    justify-content: center
+    border-right: 1px solid #e3e3e3
+    filter: grayscale(1)
+    &:hover
+      filter: grayscale(0)
+    @media screen and (max-width: 576px)
+      img
+        width: calc( 100% - 20px )
+
+footer
+  padding: 120px 0
+  color: #fff
+  background-color: #171717
+  .purpose
+    font-size: 56px
+    font-weight: 700
+    line-height: 48px
+    text-transform: uppercase
+    user-select: none
+    @media screen and (max-width: 992px)
+      font-size: 3rem
+    @media screen and (max-width: 576px)
+      font-size: 36px
+    div
+      &:last-child
+        margin-top: 40px
+        max-width: 400px
+        font-size: 28px
+        @media screen and (max-width: 576px)
+          font-size: 20px
+  span
+    color: #FFD634
+    font-size: 36px
+    @media screen and (max-width: 576px)
+      font-size: 24px
+  a
+    color: #fff
+    text-decoration: none
+    letter-spacing: 2px
+    font-size: 38px
+    @media screen and (max-width: 992px)
+      font-size: 2rem
+    @media screen and (max-width: 400px)
+      font-size: 1.5rem
+  .contact
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    @media screen and (max-width: 768px)
+      margin-top: 60px
+
+// @media screen and (max-width: 1200px)
+// @media screen and (max-width: 992px)
+// @media screen and (max-width: 768px)
+// @media screen and (max-width: 576px)
