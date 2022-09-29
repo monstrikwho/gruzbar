@@ -1,0 +1,124 @@
+header .text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+header {
+  padding-top: 200px;
+  background-color: #FFD634;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+header .container {
+  position: relative;
+}
+header .tagline {
+  position: relative;
+  display: inline-block;
+  font-size: 96px;
+  color: #546EF3;
+  font-weight: 800;
+}
+@media screen and (max-width: 576px) {
+  header .tagline {
+    font-size: 36px;
+  }
+}
+header .text {
+  margin: 30px 0 60px 0;
+  letter-spacing: 0.05em;
+}
+header .price {
+  display: inline-block;
+  width: 160px;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #ffdc17;
+  border-radius: 8px;
+  border: 2px solid #000;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
+@media screen and (max-width: 576px) {
+  header .price {
+    -webkit-transform: scale(0.6) rotate(-8deg);
+            transform: scale(0.6) rotate(-8deg);
+  }
+}
+header .price span {
+  margin: 0 4px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 25px;
+}
+header .benefit {
+  display: grid;
+  margin: 30px 0;
+  grid-template-columns: 250px 1fr;
+}
+@media screen and (max-width: 576px) {
+  header .benefit {
+    padding: 15px;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+  }
+}
+header .benefit .img-block {
+  width: 250px;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  header .benefit {
+    width: 100%;
+  }
+}
+header .benefit img {
+  height: 120px;
+}
+header .item .title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+header .item .text {
+  font-size: 16px;
+}
+header .bg-img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+header .bg-img img {
+  height: 450px;
+}
+@media screen and (max-width: 576px) {
+  header .bg-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .bg-img {
+    position: relative;
+    text-align: center;
+  }
+}
+header .img-boxes {
+  position: relative;
+  margin: 0 100px;
+  height: 400px;
+  background-color: #48e0b6;
+  border: 3px solid #000;
+  opacity: 0.7;
+}
+header .img-boxes::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 10px;
+  left: 10px;
+  background-color: #bf1b27;
+  z-index: -1;
+}

@@ -1,0 +1,100 @@
+#counter {
+  padding: 180px 0;
+  position: relative;
+  z-index: 0;
+}
+#counter::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  bottom: 80px;
+  width: calc(100% - 30px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #FFC01E;
+  -webkit-box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.1);
+          box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+@media (min-width: 1400px) {
+  #counter::after {
+    max-width: 1520px;
+  }
+}
+#counter .title {
+  margin-bottom: 60px;
+  font-size: 48px;
+  font-weight: 600;
+}
+@media screen and (max-width: 576px) {
+  #counter .title {
+    font-size: 32px;
+    margin-left: 30px;
+  }
+}
+#counter ul {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  z-index: 0;
+}
+@media screen and (max-width: 992px) {
+  #counter ul {
+    margin: 0 15px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  #counter ul {
+    grid-template-columns: 1fr;
+  }
+}
+#counter ul li {
+  margin: 10px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  text-align: center;
+  background-color: #8EB5F0;
+  border-radius: 30px;
+  border: 4px solid #1E1E1E;
+}
+#counter ul li::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: 4px solid #1E1E1E;
+  background-color: #fff;
+  z-index: -1;
+}
+#counter .count {
+  font-size: 48px;
+  font-weight: 700;
+}
+#counter .type {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+#counter span {
+  font-size: 16px;
+}

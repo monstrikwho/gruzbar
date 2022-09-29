@@ -1,0 +1,45 @@
+@import '../variables'
+
+.navbar
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 99
+    .nav
+        padding: 20px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media screen and (max-width: 768px)
+            flex-direction: column
+            .contact
+                margin-top: 10px
+    .title
+        font-size: 24px
+        font-weight: 800
+        letter-spacing: 2px
+        text-transform: uppercase
+    .subtitle
+        font-size: 16px
+        font-weight: 400
+    .number
+        display: flex
+        align-items: center
+    a
+        margin: 4px
+        display: flex
+        color: #000000
+        align-items: center
+        text-decoration: none
+        font-size: 18px
+        @media screen and (max-width: 576px)
+            font-size: 16px
+    span
+        margin: 0 5px
+        font-size: 24px
+        font-weight: 800
+        letter-spacing: 2px
+        color: $color-blue
+        @media screen and (max-width: 576px)
+            font-size: 20px

@@ -1,0 +1,69 @@
+#whywe
+    position: relative
+    padding: 80px 0
+    color: #fff
+    overflow: hidden
+    .bg
+        position: absolute
+        left: -5px
+        top: -5px
+        right: -5px
+        bottom: -5px
+        background-position: center center
+        background-attachment: scroll
+        background-image: url(https://static.tildacdn.com/tild3432-3361-4663-b030-323935316530/Grid2.svg)
+        background-color: #201e1e
+        filter: blur(1px)
+
+    .title
+        position: relative
+        display: inline-block
+        margin-bottom: 80px
+        font-size: 48px
+        font-weight: 600
+        z-index: 0
+        @media screen and (max-width: 576px)
+            font-size: 32px
+    ul
+        margin: 0 auto
+        max-width: 400px
+        li
+            margin-bottom: 80px
+            position: relative
+            display: flex
+            list-style: none
+            z-index: 0
+    .number
+        position: absolute
+        top: 0
+        transform: translateY(-20%)
+        z-index: -1
+        svg
+            width: 200px
+            height: 130px
+        @media screen and (max-width: 576px)
+            right: 0
+    .item
+        &-title
+            margin-bottom: 10px
+            font-size: 24px
+            font-weight: 600
+        &-text
+            font-size: 16px
+
+@media screen and (min-width: 576px)
+    #whywe
+        li:nth-child(odd)
+            .number
+                left: -100px
+        li:nth-child(even)
+            .number
+                right: -100px
+@media screen and (min-width: 992px)
+    #whywe
+        li:nth-child(odd)
+            .number
+                left: -250px
+        li:nth-child(even)
+            .number
+                right: -250px
