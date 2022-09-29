@@ -550,6 +550,14 @@ header .illustration img {
 #partners .slick-slide img {
   width: calc(100% - 20px);
 }
+#partners .slick-track {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 #about {
   padding: 80px 0;
