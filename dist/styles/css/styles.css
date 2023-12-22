@@ -181,6 +181,13 @@ header .desc {
     max-width: 100%;
   }
 }
+header .desc span {
+  display: inline-block;
+  background-color: rgba(121, 71, 247, 0.4);
+  padding: 2px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
 header .benefit {
   margin-bottom: 30px;
   max-width: 700px;
@@ -284,12 +291,20 @@ header .illustration img {
     font-size: 32px;
   }
 }
+#services .price {
+  display: inline-block;
+  background-color: rgba(121, 71, 247, 0.4);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+}
 #services .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   #services .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -301,7 +316,7 @@ header .illustration img {
   margin: 0 15px;
   width: 100%;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   #services .col {
     margin: 20px 0;
   }
@@ -465,10 +480,10 @@ header .illustration img {
 @media screen and (max-width: 576px) {
   #counter ul {
     grid-template-columns: 1fr;
+    padding-right: 15px;
   }
 }
 #counter ul li {
-  margin: 10px;
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;

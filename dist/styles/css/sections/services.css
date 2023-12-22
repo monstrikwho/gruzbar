@@ -28,12 +28,20 @@
     font-size: 32px;
   }
 }
+#services .price {
+  display: inline-block;
+  background-color: rgba(121, 71, 247, 0.4);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+}
 #services .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   #services .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -45,7 +53,7 @@
   margin: 0 15px;
   width: 100%;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   #services .col {
     margin: 20px 0;
   }
